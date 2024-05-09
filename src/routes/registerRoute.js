@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 
-// import authenticationUser function for user login authentication
+// import authenticateNewUser function for user registration authentication
 const { authenticateNewUser } = require("../middleware/authenticateNewUser");
 
 //use the imported authenticateNewUser middleware to authenticate new users

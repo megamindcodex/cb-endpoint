@@ -10,7 +10,7 @@ const authenticateUser = async (req, res, next) => {
 
     const token = await loginUser(userName, password);
 
-    request.token = token;
+    req.token = token;
     next();
   } catch (err) {
     res.status(401).json({ error: err.message });

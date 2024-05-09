@@ -1,7 +1,7 @@
 const User = require("../model/user");
 const jwt = require("jsonwebtoken");
 
-// loginUser function decleration with userName and password passed as parameter
+// loginUser function decleration with userName and password passed as parameters
 const loginUser = async (userName, password) => {
   try {
     const user = await User.findOne({ userName: userName });
